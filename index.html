@@ -27,31 +27,7 @@
     <link rel="stylesheet" href="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.css">
     -->
     <script type="text/javascript">
-      $(document).ready(function() {
-           $('.progress .progress-bar').css("width",
-                     function() {
-                         return $(this).attr("aria-valuenow") + "%";
-                     }
-             )
-           showText("#divEslogan", "Programo Luego Existo", 0, 200);   
-         });
-
-		var showText = function (target, message, index, interval) {   
-		  if(index==0){
-		  		$(target).html('');
-		  	}
-		  if(index==message.length){  	
-  
-		  	showText("#divEslogan", message, 0, interval);   
-		  } 
-		  if (index < message.length) {
-		   // $(target).append(message[index++]);
-		   $(target).text(message.substring(0, ++index)+'|');
-
-		    setTimeout(function () { showText(target, message, index, interval); }, interval);
-		  }
-
-		}
+$(document).ready(function(){$(".progress .progress-bar").css("width",function(){return $(this).attr("aria-valuenow")+"%"}),showText("#divEslogan","Programo Luego Existo",0,200)});var showText=function(t,o,s,e){0==s&&$(t).html(""),s==o.length&&showText("#divEslogan",o,0,e),s<o.length&&($(t).text(o.substring(0,++s)+"|"),setTimeout(function(){showText(t,o,s,e)},e))};
     </script>
 </head>
 
