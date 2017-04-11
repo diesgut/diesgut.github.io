@@ -22,13 +22,8 @@
     <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- github acitivity css 
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-    <link rel="stylesheet" href="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.css">
-    -->
-    <script type="text/javascript">
-$(document).ready(function(){$(".progress .progress-bar").css("width",function(){return $(this).attr("aria-valuenow")+"%"}),showText("#divEslogan","Programo Luego Existo",0,200)});var showText=function(t,o,s,e){0==s&&$(t).html(""),s==o.length&&showText("#divEslogan",o,0,e),s<o.length&&($(t).text(o.substring(0,++s)+"|"),setTimeout(function(){showText(t,o,s,e)},e))};
-    </script>
+    <!-- github acitivity css -->
+
 </head>
 
 <body>
@@ -38,7 +33,7 @@ $(document).ready(function(){$(".progress .progress-bar").css("width",function()
             <img class="profile-image img-responsive pull-left" src="images/diego_perfil.png" style="height:180px;width:180px;" alt="Diego E." />
             <div class="profile-content pull-left">
                 <h1 class="name">Diego E. Gutiérrez</h1>
-               <h2 class="desc" id="divEslogan">Analista Programador Java</h2>
+                <h2 class="desc" id="divEslogan">Analista Programador Java</h2>
                 <ul class="social list-inline">
 
                     <li><a target="_blank" href="https://www.linkedin.com/in/diesgut/"><i class="fa fa-linkedin"></i></a></li>
@@ -61,23 +56,26 @@ $(document).ready(function(){$(".progress .progress-bar").css("width",function()
             <div class="primary col-md-8 col-sm-12 col-xs-12">
                 <section class="about section justify">
                     <div class="section-inner">
-                        <h2 class="heading">Acerca de mí</h2>
+                        <h2 class="heading" >
+	                        <div id="divAboutMe" >System.out.println("Acerca de mí")<span id="semicolon">;<span>
+	                        </div>
+                        </h2>
                         <div class="content"
                             <p>
                               Soy un desarrollador de software que me desempeño en el cargo de Analista Programador desde finales del año 2010 trabajando en mi día a día
                                con el lenguaje de programación Java en las diferentes versiones que vienen apareciendo desde esa fecha hasta la actualidad, a lo largo
                                de este camino eh adquirido diferentes conocimientos y habilidades para el desarrollo de aplicaciones Web y empleado el uso de diferentes
                                frameworks y Herramientas tanto Backend como FrontEnd tales como; Java Server Faces, Richfaces, Primefaces, Jpa, Ejb,  jQuery, Bootstrap,
-                                Spring Framework entre muchos otros. Actualmente me encuentro aprendiendo y poniendo practica, Node Js, MongoDB, Angular 2 e Ionic 2.
+                                Spring Framework entre muchos otros. Actualmente me encuentro aprendiendo y poniendo practica, Node Js, MongoDB, Angular 2 y Ionic 2.
                               </p>
 
                               <p>
-                               A nivel personal me considero una persona creativa que busca la forma de volver las cosas complejas en faciles y optimas, entre mis intereses se encuentra el aprender nuevas tecnologías y  herramientas que me permitan desarrollarme como un mejor profesional. y como no todo es
+                                Entre mis intereses personales se encuentra el aprender nuevas tecnologías y  herramientas que me permitan desarrollarme como un mejor profesional y como no todo es
                                  trabajo en mis ratos libres me gusta escuchar música sobre todo rock, ver series de televisión y películas, también disfruto mucho viajar alejarme de la ciudad de
                                   vez en cuando y ponerme en contacto con la naturaleza.
                                 </p>
                                 <center>
-                              
+
                                   <div class="embed-responsive embed-responsive-16by9">
                                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mjCB3OK1nEs" frameborder="0" allowfullscreen></iframe>
                                 </div>
@@ -568,6 +566,9 @@ $(document).ready(function(){$(".progress .progress-bar").css("width",function()
             <small style="display:none;" class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">3rd Wave Media</a> for developers</small>
         </div><!--//container-->
     </footer><!--//footer-->
-
+    
+    <script type="text/javascript">
+function blink(){$(".content").fadeTo(100,.1).fadeTo(200,1)}$(document).ready(function(){$(".progress .progress-bar").css("width",function(){return $(this).attr("aria-valuenow")+"%"}),showText("#divEslogan","Programo Luego Existo",0,150),blinkText("#semicolon",";",0,250)});var blinkText=function(t,e,o,n){o%2==0?$(t).html(""):$(t).text(e),setTimeout(function(){blinkText(t,e,++o,n)},n)},showText=function(t,e,o,n){0==o&&$(t).html(""),o==e.length&&showTextReverse("#divEslogan",e,e.length,n),o<e.length&&($(t).text(e.substring(0,++o)+"|"),setTimeout(function(){showText(t,e,o,n)},n))},showTextReverse=function(t,e,o,n){0==o&&showText("#divEslogan","Programo Luego Existo",0,n),o==e.length&&$(t).html(""),0!=o&&(--o,$(t).text(e.substring(0,o)+"|"),setTimeout(function(){showTextReverse(t,e,o,n)},n))};
+    </script>
 </body>
 </html>
