@@ -24,6 +24,9 @@
 
     <!-- github acitivity css -->
 
+    <script type="text/javascript">
+function blink(){$(".content").fadeTo(100,.1).fadeTo(200,1)}$(document).ready(function(){$(".progress .progress-bar").css("width",function(){return $(this).attr("aria-valuenow")+"%"}),showText("#divEslogan","Programo Luego Existo...",0,150),blinkText("#semicolon",";",0,250),blink()});var blinkText=function(t,e,o,n){o%2==0?$(t).html(""):$(t).text(e),setTimeout(function(){blinkText(t,e,++o,n)},n)},showText=function(t,e,o,n){0==o&&$(t).html(""),o==e.length&&showTextReverse("#divEslogan",e,e.length,n),o<e.length&&($(t).text(e.substring(0,++o)+"|"),setTimeout(function(){showText(t,e,o,n)},n))},showTextReverse=function(t,e,o,n){0==o&&showText("#divEslogan","Programo Luego Existo",0,n),o==e.length&&$(t).html(""),0!=o&&(--o,$(t).text(e.substring(0,o)+"|"),setTimeout(function(){showTextReverse(t,e,o,n)},n))};
+    </script>
 </head>
 
 <body>
@@ -64,7 +67,7 @@
                             <p>
                               Soy un desarrollador de software que me desempeño en el cargo de Analista Programador desde finales del año 2010 trabajando en mi día a día
                                con el lenguaje de programación Java en las diferentes versiones que vienen apareciendo desde esa fecha hasta la actualidad, a lo largo
-                               de este camino eh adquirido diferentes conocimientos y habilidades para el desarrollo de aplicaciones Web y empleado el uso de diferentes
+                               de este camino he adquirido diferentes conocimientos y habilidades para el desarrollo de aplicaciones Web y empleado el uso de diferentes
                                frameworks y Herramientas tanto Backend como FrontEnd tales como; Java Server Faces, Richfaces, Primefaces, Jpa, Ejb,  jQuery, Bootstrap,
                                 Spring Framework entre muchos otros. Actualmente me encuentro aprendiendo y poniendo practica, Node Js, MongoDB, Angular 2 y Ionic 2.
                               </p>
@@ -182,7 +185,7 @@
                               </h3>
 
                               <p class="justify">
-                                Realice labores de levantamiento de incidencias, desarrollo de nuevos requerimientos e implementación de nuevos sistemas  relacionados en el ámbito pedagógico,
+                                Realizando labores de levantamiento de incidencias, desarrollo de nuevos requerimientos e implementación de nuevos sistemas  relacionados en el ámbito pedagógico,
                                 desarrollando el módulo de cobranza encargado de llevar el seguimiento del pago de pensiones de los padres de familia junto a la ejecución de distintas tareas.
                                 Participando también en el desarrollo del sistema UNALM encargado controlar los distintos procesos de la Universidad Nacional Agraria La Molina tales como el
                                proceso de evaluación de ingresantes a la universidad, creación de los sistemas calificación de sus cursos, Ingreso de notas, entre otros.
@@ -566,9 +569,6 @@
             <small style="display:none;" class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">3rd Wave Media</a> for developers</small>
         </div><!--//container-->
     </footer><!--//footer-->
-    
-    <script type="text/javascript">
-function blink(){$(".content").fadeTo(100,.1).fadeTo(200,1)}$(document).ready(function(){$(".progress .progress-bar").css("width",function(){return $(this).attr("aria-valuenow")+"%"}),showText("#divEslogan","Programo Luego Existo",0,150),blinkText("#semicolon",";",0,250)});var blinkText=function(t,e,o,n){o%2==0?$(t).html(""):$(t).text(e),setTimeout(function(){blinkText(t,e,++o,n)},n)},showText=function(t,e,o,n){0==o&&$(t).html(""),o==e.length&&showTextReverse("#divEslogan",e,e.length,n),o<e.length&&($(t).text(e.substring(0,++o)+"|"),setTimeout(function(){showText(t,e,o,n)},n))},showTextReverse=function(t,e,o,n){0==o&&showText("#divEslogan","Programo Luego Existo",0,n),o==e.length&&$(t).html(""),0!=o&&(--o,$(t).text(e.substring(0,o)+"|"),setTimeout(function(){showTextReverse(t,e,o,n)},n))};
-    </script>
+
 </body>
 </html>
