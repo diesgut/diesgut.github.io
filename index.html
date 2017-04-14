@@ -19,14 +19,7 @@
     <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
 
-    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- github acitivity css -->
-
-    <script type="text/javascript">
-function blink(){$(".content").fadeTo(100,.1).fadeTo(200,1)}$(document).ready(function(){$(".progress .progress-bar").css("width",function(){return $(this).attr("aria-valuenow")+"%"},2e3),showText("#divEslogan","Programo Luego Existo...",0,150);blinkText("#semicolon",";",0,250),blinkText("#cursorTerm","|",0,250),blinkText("#consoleIni","~$",0,250);blink()});var blinkText=function(a,b,c,d){c%2==0?$(a).html(""):$(a).text(b),setTimeout(function(){blinkText(a,b,++c,d)},d)},showText=function(a,b,c,d){0==c&&$(a).html(""),c==b.length&&showTextReverse("#divEslogan",b,b.length,d),c<b.length&&($(a).text("> "+b.substring(0,++c)),setTimeout(function(){showText(a,b,c,d)},d))},showTextReverse=function(a,b,c,d){0==c&&showText("#divEslogan","Programo Luego Existo...",0,d),c==b.length&&$(a).html(""),0!=c&&(--c,$(a).text("> "+b.substring(0,c)),setTimeout(function(){showTextReverse(a,b,c,d)},d))};
-    </script>
 </head>
 
 <body class="bg">
@@ -573,6 +566,13 @@ function blink(){$(".content").fadeTo(100,.1).fadeTo(200,1)}$(document).ready(fu
             <small style="display:none;" class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">3rd Wave Media</a> for developers</small>
         </div><!--//container-->
     </footer><!--//footer-->
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 
+    <!-- github acitivity css -->
+
+    <script type="text/javascript">
+function blink(){$(".content").fadeTo(100,.1).fadeTo(200,1)}$(document).ready(function(){$(".progress .progress-bar").css("width",function(){return $(this).attr("aria-valuenow")+"%"},2e3),showText("#divEslogan","Programo Luego Existo...",0,150);blinkText("#semicolon",";",0,250),blinkText("#cursorTerm","|",0,250),blinkText("#consoleIni","~$",0,250);blink()});var blinkText=function(a,b,c,d){c%2==0?$(a).html(""):$(a).text(b),setTimeout(function(){blinkText(a,b,++c,d)},d)},showText=function(a,b,c,d){0==c&&$(a).html(""),c==b.length&&showTextReverse("#divEslogan",b,b.length,d),c<b.length&&($(a).text("> "+b.substring(0,++c)),setTimeout(function(){showText(a,b,c,d)},d))},showTextReverse=function(a,b,c,d){0==c&&showText("#divEslogan","Programo Luego Existo...",0,d),c==b.length&&$(a).html(""),0!=c&&(--c,$(a).text("> "+b.substring(0,c)),setTimeout(function(){showTextReverse(a,b,c,d)},d))};
+    </script>
 </body>
 </html>
