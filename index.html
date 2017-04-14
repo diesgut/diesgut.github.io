@@ -25,18 +25,22 @@
     <!-- github acitivity css -->
 
     <script type="text/javascript">
-function blink(){$(".content").fadeTo(100,.1).fadeTo(200,1)}$(document).ready(function(){$(".progress .progress-bar").css("width",function(){return $(this).attr("aria-valuenow")+"%"}),showText("#divEslogan","Programo Luego Existo...",0,150),blinkText("#semicolon",";",0,250),blink()});var blinkText=function(t,e,o,n){o%2==0?$(t).html(""):$(t).text(e),setTimeout(function(){blinkText(t,e,++o,n)},n)},showText=function(t,e,o,n){0==o&&$(t).html(""),o==e.length&&showTextReverse("#divEslogan",e,e.length,n),o<e.length&&($(t).text(e.substring(0,++o)+"|"),setTimeout(function(){showText(t,e,o,n)},n))},showTextReverse=function(t,e,o,n){0==o&&showText("#divEslogan","Programo Luego Existo...",0,n),o==e.length&&$(t).html(""),0!=o&&(--o,$(t).text(e.substring(0,o)+"|"),setTimeout(function(){showTextReverse(t,e,o,n)},n))};  
-	</script>
+function blink(){$(".content").fadeTo(100,.1).fadeTo(200,1)}$(document).ready(function(){$(".progress .progress-bar").css("width",function(){return $(this).attr("aria-valuenow")+"%"},2e3),showText("#divEslogan","Programo Luego Existo...",0,150);blinkText("#semicolon",";",0,250),blinkText("#cursorTerm","|",0,250),blinkText("#consoleIni","~$",0,250);blink()});var blinkText=function(a,b,c,d){c%2==0?$(a).html(""):$(a).text(b),setTimeout(function(){blinkText(a,b,++c,d)},d)},showText=function(a,b,c,d){0==c&&$(a).html(""),c==b.length&&showTextReverse("#divEslogan",b,b.length,d),c<b.length&&($(a).text("> "+b.substring(0,++c)),setTimeout(function(){showText(a,b,c,d)},d))},showTextReverse=function(a,b,c,d){0==c&&showText("#divEslogan","Programo Luego Existo...",0,d),c==b.length&&$(a).html(""),0!=c&&(--c,$(a).text("> "+b.substring(0,c)),setTimeout(function(){showTextReverse(a,b,c,d)},d))};
+    </script>
 </head>
 
-<body>
+<body class="bg">
     <!-- ******HEADER****** -->
-    <header class="header">
+    <header class="header ">
         <div class="container">
             <img class="profile-image img-responsive pull-left" src="images/diego_perfil.png" style="height:180px;width:180px;" alt="Diego E." />
             <div class="profile-content pull-left">
                 <h1 class="name">Diego E. Gutiérrez</h1>
-                <h2 class="desc" id="divEslogan">Analista Programador Java</h2>
+                <h2 class="desc text-left" >
+      				~$
+                	<span id="divEslogan">Analista Programador Java<</span>
+                	<span id="cursorTerm">|</span>
+                </h2>
                 <ul class="social list-inline">
 
                     <li><a target="_blank" href="https://www.linkedin.com/in/diesgut/"><i class="fa fa-linkedin"></i></a></li>
